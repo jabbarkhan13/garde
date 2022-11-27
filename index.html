@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <title>Document</title>
+</head>
+<body>
+
+
+ <label><h2>Enter Your Name:</h2></label>
+ <input type="text" id="name" placeholder="Name">
+
+ <label><h2>Enter Your Total Marks:</h2></label>
+ <input type="number" id="tm" placeholder="Total Marks">
+
+ <label><h2>Enter Your Obtain Marks:</h2></label>
+ <input type="number" id="om" placeholder="Obtain Marks"><br><br>
+
+ <button type="submit" onclick="clk()" >submit</button>
+
+
+ <script>
+
+ function clk(){
+     
+        var num=(document.getElementById('om')).value;
+
+  if (num <= 1100 && num >= 800) {
+   document.write ("congragulation! your marks grades is excelent = A++");
+  } else if (num <= 799 && num >= 600) {
+    document.write ("congragulation! your marks grades is very good = B");
+  } else if (num <= 599 && num >= 400) {
+    document.write ("congragulation! your marks grades is good = C");
+  } else {
+    document.write ("sorry are fail  =F");
+  }
+     
+ }
+ 
+
+
+
+ </script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
